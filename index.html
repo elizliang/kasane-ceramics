@@ -1,0 +1,319 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>KASANE · Japanese Ceramics</title>
+  <meta name="description" content="KASANE presents Japanese ceramic objects shaped by quiet form, natural texture, and everyday ritual.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#shop">Skip to shop</a>
+
+  <div class="announce">
+    COMPLIMENTARY SHIPPING OVER <span data-free-ship>$75</span> <span class="announce-divider">·</span> OBJECTS FOR EVERYDAY RITUAL
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#top" class="logo" aria-label="Home">
+        <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M11 6h10v3c0 2 4 4 5 9 1 6-3 9-10 9S5 24 6 18c1-5 5-7 5-9z" fill="currentColor"/><ellipse cx="16" cy="6" rx="5" ry="1.4" fill="var(--cream)"/></svg>
+        <span data-store-name>KASANE</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Main">
+        <a href="#shop">Shop</a>
+        <a href="#about">Our studio</a>
+        <a href="#memberships">Memberships</a>
+        <a href="#care">Care &amp; FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-btn cart-btn" id="cartOpen" aria-label="Open cart">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 8h12l-1 12H7L6 8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 8V7a3 3 0 0 1 6 0v1" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+          <span class="cart-count" id="cartCount" aria-live="polite">0</span>
+        </button>
+        <button class="icon-btn menu-btn" id="menuToggle" aria-label="Menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Japanese ceramic objects · Collection 01</p>
+          <h1>Objects for the <em>art of living.</em></h1>
+          <p class="lead">Sculptural vessels, considered details, and the beauty of a daily ritual. Explore ceramics informed by Japanese craft.</p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" href="#shop">Explore the collection <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="#about">Our philosophy</a>
+          </div>
+          <ul class="hero-points">
+            <li>Considered form</li>
+            <li>Natural texture</li>
+            <li>Made for daily use</li>
+          </ul>
+        </div>
+        <div class="hero-art" id="heroArt" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section id="shop" class="shop">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">01 / The collection</p>
+            <h2>Form, held in the hand.</h2>
+          </div>
+          <div class="filters" id="filters" aria-label="Filter by category"></div>
+        </div>
+        <div class="grid" id="productGrid"></div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container about-inner">
+        <div class="about-art" id="aboutArt" aria-hidden="true"></div>
+        <div class="about-copy">
+          <p class="eyebrow">02 / Our philosophy</p>
+          <h2>Beauty in the space between.</h2>
+          <p>Japanese ceramics invite us to notice what is often overlooked: the weight of a cup, the quiet line of a rim, the subtle movement of glaze. KASANE is a study in useful objects and lasting presence.</p>
+          <ol class="process">
+            <li><span>01</span><div><strong>Shape</strong>Every silhouette begins with balance and an intentional line.</div></li>
+            <li><span>02</span><div><strong>Refine</strong>Foot rings, rims, and handles are considered from every angle.</div></li>
+            <li><span>03</span><div><strong>Surface</strong>Layered color and texture give each form its character.</div></li>
+            <li><span>04</span><div><strong>Live with</strong>Objects are meant to be used, noticed, and kept.</div></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="care" class="care">
+      <div class="container care-inner">
+        <div>
+          <p class="eyebrow">03 / Care &amp; details</p>
+          <h2>Made to be lived with.</h2>
+          <p class="muted">A few notes on care, variation, and the journey from our collection to your home.</p>
+        </div>
+        <div class="faq">
+          <details open>
+            <summary>Is it dishwasher and microwave safe?</summary>
+            <p>Care depends on the final piece and glaze. For the sample collection, gentle hand washing is recommended to preserve each surface.</p>
+          </details>
+          <details>
+            <summary>Why does my piece look a little different from the photo?</summary>
+            <p>Every piece is thrown and glazed by hand, and glazes move in the kiln. Expect small variations in size, speckling, and color. That's what makes yours one of a kind.</p>
+          </details>
+          <details>
+            <summary>How long does shipping take?</summary>
+            <p>Shipping timing will be confirmed when the collection launches. Each piece will be packed with care for its journey.</p>
+          </details>
+          <details>
+            <summary>What if something arrives broken?</summary>
+            <p>Please contact the studio with a photograph and your order details so we can make it right.</p>
+          </details>
+          <details>
+            <summary>Do you take custom orders?</summary>
+            <p>Please contact the studio to discuss a considered commission or special order.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="newsletter">
+      <div class="container newsletter-inner">
+        <h2>Notes from the studio.</h2>
+        <p>Collection releases, new forms, and occasional reflections on craft.</p>
+        <form class="signup" id="signupForm" novalidate>
+          <label class="sr-only" for="email">Email address</label>
+          <input id="email" type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+          <button class="btn btn-primary" type="submit">Subscribe</button>
+        </form>
+        <p class="form-msg" id="signupMsg" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+    <div id="memberships">
+    <section class="membership-hero">
+      <div class="container membership-hero-inner">
+        <div>
+          <p class="eyebrow">04 / Studio membership</p>
+          <h2>A place to <em>practice.</em></h2>
+          <p class="lead">An invitation to work with clay more deeply. Studio access, shared knowledge, and a thoughtful exchange of service for time or credit.</p>
+          <div class="hero-ctas"><a class="btn btn-primary" href="#plans">Explore plans</a><a class="btn btn-ghost" href="#member-space">Your hours</a></div>
+        </div>
+        <div class="membership-hero-art" aria-hidden="true"><span class="art-ring art-ring-one"></span><span class="art-ring art-ring-two"></span><span class="art-center">A slower<br>practice</span></div>
+      </div>
+    </section>
+    <section class="membership-section membership-tinted" id="how-it-works">
+      <div class="container">
+        <p class="eyebrow">The practice</p>
+        <h2>How membership works</h2>
+        <div class="membership-steps">
+          <article><span class="step-mark">01</span><h3>Pick your plan</h3><p>Choose the level of studio access and learning support that fits your practice. Your plan has a monthly price.</p></article>
+          <article><span class="step-mark">02</span><h3>Make and help</h3><p>Use your member perks, and optionally sign up for studio service shifts such as kiln care or a shared-space reset.</p></article>
+          <article><span class="step-mark">03</span><h3>Use earned hours</h3><p>After a shift is completed and approved, service hours can lower your next membership bill. The proposed studio-time option is shown below.</p></article>
+        </div>
+      </div>
+    </section>
+    <section class="membership-section" id="plans">
+      <div class="container">
+        <p class="eyebrow">Membership</p>
+        <h2>Space for the work</h2>
+        <p class="membership-intro">These sample plans and prices are for exploring the experience. The studio will confirm its final offer.</p>
+        <div class="plan-grid" id="planGrid"></div>
+        <div class="perk-strip" aria-label="Membership perks">
+          <div><strong>Room to make</strong><span>Come in for shared studio practice and work on your own pieces.</span></div>
+          <div><strong>From clay to kiln</strong><span>Use community firings to bring your finished work to life.</span></div>
+          <div><strong>People and practice</strong><span>Meet other makers; Studio Plus also includes a sample monthly technique session.</span></div>
+        </div>
+      </div>
+    </section>
+    <section class="membership-section" id="hour-rewards">
+      <div class="container reward-layout">
+        <div>
+          <p class="eyebrow">Service hour rewards</p>
+          <h2>See what helping earns</h2>
+          <p class="membership-intro">In this sample program, each completed service hour has a set value. You choose one use for each hour: a dollar credit toward membership dues or extra open-studio time. One hour cannot be redeemed twice.</p>
+          <div class="reward-choice"><strong>Dues credit</strong><span>Apply the dollar value to one month of dues at membership checkout. This is a bill credit, not a cash payout.</span></div>
+          <div class="reward-choice"><strong>Studio time</strong><span>Use the same hours for extra open-studio time, if the studio adopts this option. Studio-time redemption is illustrative and is not yet available in checkout.</span></div>
+          <p class="fine">All rates, perks, and redemption rules shown here are sample terms for the prototype. In a live program, the studio would approve completed shifts before credit becomes spendable.</p>
+        </div>
+        <div class="reward-table-card">
+          <h3>Example hour conversions</h3>
+          <p id="conversionRule" class="conversion-rule"></p>
+          <div class="conversion-table-wrap"><table class="conversion-table"><thead><tr><th scope="col">Service hours</th><th scope="col">Dues credit</th><th scope="col">Or studio time</th></tr></thead><tbody id="conversionExamples"></tbody></table></div>
+          <p class="fine">Choose one reward per hour. Dues credit cannot exceed that month's membership price.</p>
+        </div>
+      </div>
+    </section>
+    <section class="membership-section membership-tinted" id="member-space">
+      <div class="container member-grid">
+        <div>
+          <p class="eyebrow">Your practice</p>
+          <h2>Keep your hours in one place</h2>
+          <p class="membership-intro">Create a local member profile to save your shift signups and hours in this browser.</p>
+          <form id="memberForm" class="member-form">
+            <label for="memberName">Your name</label><input id="memberName" name="name" autocomplete="name" required maxlength="80" placeholder="Your name">
+            <label for="memberEmail">Email address</label><input id="memberEmail" name="email" type="email" autocomplete="email" required placeholder="you@example.com">
+            <button class="btn btn-primary" type="submit">Save member profile</button>
+          </form>
+          <p class="form-msg" id="memberMessage" role="status" aria-live="polite"></p>
+        </div>
+        <div class="hours-card">
+          <p class="eyebrow">Service balance</p>
+          <h3 id="memberGreeting">Your hours</h3>
+          <div class="hours-number"><strong id="earnedHours">0</strong><span>recorded hours</span></div>
+          <p class="hours-value">Worth <strong id="hoursValue">$0</strong> toward membership dues</p>
+          <p class="hours-value">Or up to <strong id="studioHoursValue">0 hours</strong> of extra open-studio time under the sample exchange</p>
+          <p class="fine" id="scheduledSummary">No shifts signed up yet.</p>
+          <p class="fine">Hours in this prototype are self-recorded and stored only in this browser. A live studio would verify completed hours before applying credit.</p>
+        </div>
+      </div>
+    </section>
+    <section class="membership-section" id="shifts">
+      <div class="container">
+        <p class="eyebrow">Service & exchange</p>
+        <h2>Upcoming ways to help</h2>
+        <p class="membership-intro">Sign up for a sample service shift, then record completed time for the checkout preview. Dates and availability will be set by the studio.</p>
+        <div class="shift-grid" id="shiftGrid"></div>
+        <p class="form-msg" id="shiftMessage" role="status" aria-live="polite"></p>
+      </div>
+    </section>
+    <section class="membership-section membership-tinted" id="membership-checkout">
+      <div class="container checkout-grid">
+        <div>
+          <p class="eyebrow">Membership checkout</p>
+          <h2>See how your hours add up</h2>
+          <p class="membership-intro">Choose a monthly plan and apply recorded service hours to see a sample checkout. To try it, save a local profile, sign up for a shift above, and record it as completed. Studio-time rewards would need a separate redemption flow.</p>
+          <label class="field-label" for="checkoutPlan">Membership plan</label>
+          <select id="checkoutPlan" class="member-select"></select>
+          <label class="credit-toggle"><input type="checkbox" id="applyHours"><span>Apply available service hours</span></label>
+          <p class="fine">Sample rate: <strong id="hourlyRate">$15</strong> per hour. Any unused hours stay in your balance in this preview.</p>
+        </div>
+        <div class="checkout-card">
+          <h3>Your monthly estimate</h3>
+          <div class="checkout-line"><span>Membership</span><strong id="planPrice">$0</strong></div>
+          <div class="checkout-line"><span>Service hours applied</span><strong id="creditApplied">−$0</strong></div>
+          <div class="checkout-line checkout-total"><span>Estimated amount due</span><strong id="amountDue">$0</strong></div>
+          <p class="fine" id="hoursUsed">0 hours used</p>
+          <button class="btn btn-primary btn-block" id="checkoutMembership" type="button">Simulate checkout</button>
+          <p class="fine" id="checkoutMessage" role="status" aria-live="polite">Preview only. No payment or membership is submitted.</p>
+          <div class="checkout-preview" id="checkoutPreview" hidden aria-live="polite">
+            <h4>Sample checkout summary</h4>
+            <p id="previewSummary"></p>
+            <p id="previewBalance"></p>
+            <p class="fine">This is a browser-only example. No payment is made, and no hours are deducted.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <a href="#top" class="logo logo-footer"><span data-store-name>KASANE</span></a>
+        <p class="muted">Japanese ceramic objects for considered living.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer">
+        <a href="#shop">Shop</a>
+        <a href="#about">Our studio</a>
+        <a href="#memberships">Memberships</a>
+        <a href="#care">Shipping &amp; returns</a>
+        <a href="#contact">Contact</a>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+      </nav>
+    </div>
+    <div class="container footer-base">
+      <span>© <span id="year"></span> <span data-store-name>KASANE</span></span>
+      <span>Form. Texture. Time.</span>
+    </div>
+  </footer>
+
+  <!-- Cart drawer -->
+  <div class="overlay" id="overlay" hidden></div>
+  <aside class="drawer" id="cartDrawer" aria-label="Shopping cart" aria-hidden="true" tabindex="-1">
+    <div class="drawer-head">
+      <h2>Your cart</h2>
+      <button class="icon-btn" id="cartClose" aria-label="Close cart">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+    </div>
+    <div class="ship-progress" id="shipProgress"></div>
+    <div class="drawer-body" id="cartItems"></div>
+    <div class="drawer-foot" id="cartFoot">
+      <div class="subtotal"><span>Subtotal</span><strong id="cartSubtotal">$0</strong></div>
+      <label class="credit-toggle"><input type="checkbox" id="cartApplyHours"><span>Apply service hours to this order</span></label>
+      <p class="fine" id="cartHoursAvailable">No recorded hours yet.</p>
+      <div class="subtotal"><span>Service credit</span><strong id="cartCredit">−$0</strong></div>
+      <div class="subtotal cart-estimate"><span>Estimated amount due</span><strong id="cartAmountDue">$0</strong></div>
+      <p class="fine">Taxes and shipping are not included in this preview. <a href="#member-space" data-close-cart>Record service hours</a> or <a href="#membership-checkout" data-close-cart>view membership checkout</a>.</p>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+      <p class="fine" id="cartCheckoutMessage" role="status" aria-live="polite"></p>
+    </div>
+  </aside>
+
+  <!-- Product detail modal -->
+  <div class="modal" id="productModal" hidden>
+    <div class="modal-card" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+      <button class="icon-btn modal-close" id="modalClose" aria-label="Close">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+      </button>
+      <div class="modal-art" id="modalArt"></div>
+      <div class="modal-info" id="modalInfo"></div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="membership-config.js"></script>
+  <script src="app.js"></script>
+  <script src="memberships.js"></script>
+</body>
+</html>
